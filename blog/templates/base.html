@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>My Bolg</title>
+        <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
+    </head>
+    <body>
+        <dev class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">My Blog</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link" href="/">Home</a>
+                        <a class="nav-item nav-link" href="/allposts/">All Posts</a>
+                        <a class="nav-item nav-link" href="/create">Create New Post</a>
+                        <a class="nav-item nav-link" href="/signin/">signin</a>
+                        <a class="nav-item nav-link" href="/signup/">signup</a>
+                        <a class="nav-item nav-link" href="/signout/">signout</a>
+                        <a class="nav-item nav-link" href="#">{{request.user.username}}</a>
+                        
+                    
+                    </div>
+                </div>
+            </nav>
+        </dev>
+            <br><br>
+            {% block body %} {% endblock %}
+    </body>
+</html>

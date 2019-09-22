@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %} 
+        <dev class="container">
+            {% for post in posts %}
+            <a href="/post/{{post.id}}/">
+                <h3>{{post.title}}</h3>
+            </a>
+            <p>{{post.content}}</p>
+            <hr>
+            {% endfor %}
+        </dev>
+{% endblock %}

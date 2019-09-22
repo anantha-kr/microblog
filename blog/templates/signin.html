@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+        <div class="container">
+            <h3>Create New user</h3>
+            <hr>
+            <form action="/signin/" method="POST">
+                {% csrf_token %}
+                <p>username</p>
+                <input type="username" class="form-control" name="username">
+                <br>
+                <p>Password</p>
+                <input type="password" class="form-control" name="password">
+                <br>
+                <button type="submit" class="btn btn-success">Signin</button>
+            </form>
+        </div>
+{% endblock %}
